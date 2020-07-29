@@ -29,10 +29,10 @@ function usage {
 Usage: $0 [-f root folder] [-k kubeconfig path] [-l [y/n]] [-d kubermatic domain]
 
 Flags:
-  -f, --folder='.': Folder where the kubermatic tarball has been extracted.
+  -f, --folder: Folder where the kubermatic tarball has been extracted.
   -k, --kubeconfig: Path to the kubeconfig file of the Seed Kubernetes cluster.
   -d, --kubermatic-domain: Domain to be used for the Kubermatic Kubernetes platform installation
-  -p, --letsencrypt-prod='n': Flag saying whether the production Let's Encrypt environment should be used.
+  -p, --letsencrypt-prod: Flag saying whether the production Let's Encrypt environment should be used.
 When not specified or set to 'n' staging environment is used, if set to 'y' or specified withoug a value production environment is used instead.
 EOF
     exit 1
