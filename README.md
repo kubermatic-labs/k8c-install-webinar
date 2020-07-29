@@ -25,7 +25,7 @@ will be signing the certificates.
 
 We can now run the script:
 ```bash
-./generate.sh --folder '.' --kubeconfig ./kubeconfig --kubermatic-domain kubermatic.test.com --letsecnrypt-prod y 
+./generate.sh --folder '.' --kubeconfig ./kubeconfig --kubermatic-domain kubermatic.test.com --letsencrypt-prod y 
 ```
 
 This will generate the files used for the installation in the root directory:
