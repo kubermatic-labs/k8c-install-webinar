@@ -3,6 +3,14 @@
 This repository will be used for hosting the script. It is used to generate 
 couple of secrets and populate the installation files. 
 
+## Quickstart
+
+Run the following command to launch the script without cloning the repository:
+
+```
+wget -O - https://raw.githubusercontent.com/kubermatic-labs/k8c-install-webinar/master/generate.sh | bash /dev/stdin -k ./kubeconfig -d kubermatic.test.com
+```
+
 ## Script usage
 
 In the installation files we need to specify values and options that are
@@ -25,7 +33,7 @@ will be signing the certificates.
 
 We can now run the script:
 ```bash
-./generate.sh --folder '.' --kubeconfig ./kubeconfig --kubermatic-domain kubermatic.test.com --letsencrypt-prod y 
+./generate.sh --folder '.' --kubeconfig ./kubeconfig --kubermatic-domain kubermatic.test.com --letsencrypt-prod
 ```
 
 This will generate the files used for the installation in the root directory:
@@ -41,3 +49,4 @@ drwxr-xr-x   5 staff  staff     160 Jul 27 22:12 examples
 -rw-r--r--   1 staff  staff    8186 Jul 29 13:38 seed.yaml
 -rw-r--r--   1 staff  staff    1799 Jul 29 13:38 values.yaml
 ```
+
